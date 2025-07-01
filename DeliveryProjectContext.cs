@@ -11,5 +11,6 @@ namespace DeliveryProject
         public DeliveryProjectContext(DbContextOptions<DeliveryProjectContext> options) : base(options) { }
 
         public DbSet<Truck> Trucks { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 }

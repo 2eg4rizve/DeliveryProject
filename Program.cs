@@ -15,6 +15,10 @@ builder.Services.AddDbContext<DeliveryProjectContext>(options =>
 builder.Services.AddScoped<ITruckRepository, TruckRepository>();
 builder.Services.AddScoped<ITruckManager, TruckManager>();
 
+
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IProductManager, ProductManager>();
+
 // ✅ MVC & Swagger setup
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
