@@ -15,5 +15,9 @@ namespace DeliveryProject
         public DbSet<Product> Products { get; set; }
 
         public DbSet<ConnectTruckAndProducts> ConnectTruckAndProducts { get; set; }
+
+        public DbSet<ReleaseProduct> ReleaseProduct { get; set; }
+
+
     }
 }

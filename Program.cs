@@ -22,6 +22,15 @@ builder.Services.AddScoped<IProductManager, ProductManager>();
 builder.Services.AddScoped<IConnectTruckAndProductsRepository, ConnectTruckAndProductsRepository>();
 builder.Services.AddScoped<IConnectTruckAndProductsManager, ConnectTruckAndProductsManager>();
 
+builder.Services.AddScoped<IReleaseProductRepository, ReleaseProductRepository>();
+builder.Services.AddScoped<IReleaseProductManager, ReleaseProductManager>();
+
+
+
+builder.Services.AddScoped<IReleaseProductRepository, ReleaseProductRepository>();
+builder.Services.AddScoped<IReleaseProductManager, ReleaseProductManager>();
+
+
 
 // ✅ MVC & Swagger setup
 builder.Services.AddControllers();
