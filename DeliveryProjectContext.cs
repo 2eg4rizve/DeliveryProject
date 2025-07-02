@@ -3,6 +3,7 @@
 // DeliveryProjectContext.cs
 using DeliveryProject.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 
 namespace DeliveryProject
 {
@@ -12,5 +13,7 @@ namespace DeliveryProject
 
         public DbSet<Truck> Trucks { get; set; }
         public DbSet<Product> Products { get; set; }
+
+        public DbSet<ConnectTruckAndProducts> ConnectTruckAndProducts { get; set; }
     }
 }
