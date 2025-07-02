@@ -22,9 +22,12 @@ namespace DeliveryProject.Repositories.Repository
 
         public async Task SaveAllAsync()
         {
-            var data = await (from cp in _context.ConnectTruckAndProducts
-                              join t in _context.Trucks on cp.TruckId equals t.TruckId
-                              join p in _context.Products on cp.ProductId equals p.ProductId
+            var data = await (from 
+                                   cp in _context.ConnectTruckAndProducts
+                              join 
+                                   t in _context.Trucks on cp.TruckId equals t.TruckId
+                              join 
+                                   p in _context.Products on cp.ProductId equals p.ProductId
                               select new ReleaseProduct
                               {
                                   TruckId = cp.TruckId,
